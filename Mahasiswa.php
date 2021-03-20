@@ -2,10 +2,38 @@
 require_once('User.php');
 
 class Mahasiswa extends User{
-    public $nim;
-    public $nama;
-    public $tanggal_lahir;
-    public $jenis_kelamin;
+    protected $nim;
+    protected $nama;
+    protected $tanggal_lahir;
+    protected $jenis_kelamin;
+
+      	// method untuk setter
+	public function setnim($a){
+		$this->nim= $a;
+	}
+	public function setnama($a){
+		$this->nama = $a;
+	}
+    public function settanggal_lahir($a){
+		$this->tanggal_lahir= $a;
+	}
+	public function setjenis_kelamin($a){
+		$this->jenis_kelamin = $a;
+	}
+         // method untuk getter
+	public function getnim() {
+		return $this->nim; 
+	}
+	public function getnama() {
+		return $this->nama;
+	}
+    public function gettanggal_lahir() {
+		return $this->tanggal_lahir; 
+	}
+	public function getjenis_kelamin() {
+		return $this->jenis_kelamin;
+	}
+
 
     function __construct($nim,$nama,$tgl,$jk){
         $this->nim = $nim;
