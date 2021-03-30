@@ -1,5 +1,5 @@
 <?php
-require_once('User.php');
+require_once('application/User.php');
 
 class Pegawai extends User{
     protected $nip;

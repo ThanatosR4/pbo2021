@@ -1,8 +1,12 @@
 <?php
-require_once('User.php');
-require_once('Pegawai.php');
 
-class Dosen extends Pegawai{
+namespace application;
+
+require_once('application/User.php');
+require_once('application/Pegawai.php');
+
+class Dosen
+{
     protected $nidn;
     protected $jabatan_akademis;
 
@@ -21,7 +25,7 @@ class Dosen extends Pegawai{
 		return $this->jabatan_akademis;
 	}
 
-    function __construct($nip,$nama,$hp,$gp){
+    function __construct($nip="", $nama="Dian Prawira", $hp="0800000", $gp="50000000"){
         $this->nip = $nip;
         $this->nama = $nama;
         $this->no_hp = $hp;
