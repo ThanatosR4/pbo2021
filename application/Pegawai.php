@@ -1,4 +1,7 @@
 <?php
+
+namespace App;
+
 require_once('application/User.php');
 
 class Pegawai extends User{

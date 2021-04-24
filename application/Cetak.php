@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class Cetak
 {
   public function cetakKtm(Mahasiswa $mahasiswa)

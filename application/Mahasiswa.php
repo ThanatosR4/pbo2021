@@ -1,4 +1,7 @@
 <?php
+
+namespace App;
+
 require_once('User.php');
 
 class Mahasiswa extends User{

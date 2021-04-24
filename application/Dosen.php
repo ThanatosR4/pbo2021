@@ -1,6 +1,7 @@
 <?php
 
 namespace application;
+namespace App;
 
 require_once('application/User.php');
 require_once('application/Pegawai.php');

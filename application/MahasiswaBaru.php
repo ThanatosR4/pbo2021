@@ -1,4 +1,7 @@
 <?php
+
+namespace App;
+
 require_once('User.php');
 require_once('Mahasiswa.php');
 
