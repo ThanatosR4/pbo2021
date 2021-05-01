@@ -25,8 +25,10 @@ class MahasiswaBaru extends Mahasiswa{
     }
 
     function bayarGedung(){
+        echo "$this ->username Anda telah membayar Gedung" ;
 
     }
+
 }
 
 ?>

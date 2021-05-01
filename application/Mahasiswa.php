@@ -9,6 +9,11 @@ class Mahasiswa extends User{
     protected $nama;
     protected $tanggal_lahir;
     protected $jenis_kelamin;
+	protected $sks;
+	protected $bobot;
+	const AKTIF = 1;
+	const NON_AKTIF = 0;
+	public static $status = self::AKTIF;
 
       	// method untuk setter
 	public function setnim($a){
@@ -42,7 +47,7 @@ class Mahasiswa extends User{
         $this->nim = $nim;
         $this->nama = $nama;
         $this->tanggal_lahir = $tgl;
-        $this->jenis_kelamin = $jk;
+
     }
     public function tampilkanAngkatan(){
         echo $this->nama. ' merupakan angkatan tahun '. substr($this->nim,5,2);
@@ -54,4 +59,15 @@ class Mahasiswa extends User{
     public function tampilkanNama(){
         echo $this->nama;
     }
+	public static function bergerak(){
+        echo "agen solusi, bukan agen perubahan <br/>";
+	}
+	final public function tuntaskan(){
+		self::bergerak();
+		echo "memperbaikki menjadi lebih baik";
+	}
+
+	public static function hitungSks($sks, $bobot){
+        return $sks*$bobot;
+	}
 }
