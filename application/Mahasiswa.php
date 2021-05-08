@@ -70,4 +70,4 @@ class Mahasiswa extends User{
 	public static function hitungSks($sks, $bobot){
         return $sks*$bobot;
 	}
-}
+}	
